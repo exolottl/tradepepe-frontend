@@ -22,6 +22,7 @@ import { Route as AboutIndexImport } from './routes/about/index'
 const IndexRoute = IndexImport.update({
   id: '/',
   path: '/',
+  id: 'home',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -34,12 +35,14 @@ const LoginIndexRoute = LoginIndexImport.update({
 const JournalIndexRoute = JournalIndexImport.update({
   id: '/journal/',
   path: '/journal/',
+  id: 'journal',
   getParentRoute: () => rootRoute,
 } as any)
 
 const AnalyticsIndexRoute = AnalyticsIndexImport.update({
   id: '/analytics/',
   path: '/analytics/',
+  id: 'analytics',
   getParentRoute: () => rootRoute,
 } as any)
 
